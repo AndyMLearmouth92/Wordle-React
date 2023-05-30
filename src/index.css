@@ -154,3 +154,8 @@ h1 {
     border-color: #333;
   }
 }
+
+#messagesToUser{
+  font-weight: 800;
+  color: red;
+}

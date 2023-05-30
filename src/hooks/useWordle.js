@@ -83,6 +83,10 @@ const useWordle = (solution) => {
             // only add guess if turn is less than 5.
             if(turn > 5){
                 console.log('You used all of your guesses')
+                document.getElementById("messagesToUser").innerHTML = 'You used all of your guesses';
+                setTimeout(function(){
+                    document.getElementById("messagesToUser").innerHTML = '';
+                }, 3000);
                 return
             }
             // Not already submitted that word in the past / no duplicate words.
@@ -97,6 +101,10 @@ const useWordle = (solution) => {
             // Check word is 5 chars long.
             if(currentGuess.length !== 5){
                 console.log('Word must be 5 characters long')
+                document.getElementById("messagesToUser").innerHTML = 'Word must be 5 characters long';
+                setTimeout(function(){
+                    document.getElementById("messagesToUser").innerHTML = '';
+                }, 3000);
                 return
             }
             const formatted = formatGuess()
