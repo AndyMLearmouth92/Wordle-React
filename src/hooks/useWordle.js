@@ -88,6 +88,10 @@ const useWordle = (solution) => {
             // Not already submitted that word in the past / no duplicate words.
             if(history.includes(currentGuess)){
                 console.log('You already tried that word')
+                document.getElementById("messagesToUser").innerHTML = 'You already tried that word';
+                setTimeout(function(){
+                    document.getElementById("messagesToUser").innerHTML = '';
+                }, 3000);
                 return
             }
             // Check word is 5 chars long.
