@@ -7,14 +7,14 @@ export default function Modal( {isCorrect, turn, solution}) {
             <div>
                 <h1>You win</h1>
                 <p className='solution'>{solution}</p>
-                <p>You found the solution in {turn} guesses :)</p>
+                <p>You found the solution in {turn} guesses :) Please refresh for another go.</p>
             </div>
         )}
           {!isCorrect && (
             <div>
                 <h1>Nevermind</h1>
                 <p className='solution'>{solution}</p>
-                <p>Better luck next time :)</p>
+                <p>Better luck next time :) Please refresh for another go.</p>
             </div>
         )}
     </div>
