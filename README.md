@@ -2,6 +2,11 @@
 
 React Wordle is an imitation of the popular word game: Wordle. You must try to work out the current solution by submitting guesses of 5 letter words. The letters will highlight green if they are fully correct and yellow if partially correct.
 
+You can view Wordle <a href="https://wordgamewordle.netlify.app">here</a>.
+
+<img width="1470" alt="wordle" src="https://github.com/AndyMLearmouth92/Wordle-React/assets/108182837/68666180-836d-49e6-a4a9-3ebe6147d9ff">
+
+
 ## Getting started
 
 ### Installation
